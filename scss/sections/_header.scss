@@ -1,0 +1,20 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.title {
+    color: c.$main-text-color;
+    width: 100%;
+    background-color: c.$main-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+}
