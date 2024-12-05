@@ -1,7 +1,6 @@
 .title {
   color: #c7522a;
   width: 100%;
-  background-color: #fbf2c4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +13,7 @@
 }
 .title img {
   width: 500px;
-  height: 260px;
+  height: 250px;
 }
 
 form {
@@ -52,8 +51,9 @@ form button {
   padding: 16px 25px;
   font-size: 1.2rem;
   background-color: greenyellow;
-  border: 2px solid black;
+  border: 2px solid #e5c185;
   border-radius: 5px;
+  font-weight: 500;
   cursor: pointer;
 }
 form button:hover {
@@ -63,18 +63,15 @@ form button:hover {
   color: rgb(168, 252, 0);
 }
 
-header {
+.header_game {
   display: flex;
   justify-content: space-between;
 }
-header img {
-  width: 230px;
+.header_game img {
+  width: 250px;
   height: 130px;
-  background-color: #e5c185;
-  border-radius: 5px;
-  margin-left: -10px;
 }
-header #welcomeUser {
+.header_game #welcomeUser {
   font-weight: 500;
   font-size: 1.5rem;
   padding: 10px 20px;

@@ -30,8 +30,9 @@ form {
         padding: 16px 25px;
         font-size: 1.2rem;
         background-color: greenyellow;
-        border: 2px solid black;
+        border: 2px solid c.$alt-bg-color;
         border-radius: 5px;
+        font-weight: 500;
         cursor: pointer;
         &:hover {
             transition: 0.3s ease-in-out;
