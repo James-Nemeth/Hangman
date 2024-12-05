@@ -12,8 +12,72 @@
   font-weight: 400;
   font-size: 2rem;
 }
-.title h1 {
-  font-size: 3.5rem;
+.title img {
+  width: 500px;
+  height: 260px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 30px;
+}
+form div label {
+  background-color: #e5c185;
+  padding: 10px 100px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+form div input {
+  padding: 5px 50px;
+  text-align: center;
+  background-color: #fbf2c4;
+  border: 2px solid #e5c185;
+  border-radius: 5px;
+  color: #c7522a;
+  font-size: 1.2rem;
+}
+form button {
+  padding: 16px 25px;
+  font-size: 1.2rem;
+  background-color: greenyellow;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: black;
+  border: 1px solid black;
+  color: rgb(168, 252, 0);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: 230px;
+  height: 130px;
+  background-color: #e5c185;
+  border-radius: 5px;
+  margin-left: -10px;
+}
+header #welcomeUser {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10px 20px;
 }
 
 * {
@@ -21,4 +85,8 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", serif;
+}
+
+body {
+  background-color: #fbf2c4;
 }/*# sourceMappingURL=styles.css.map */

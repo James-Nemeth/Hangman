@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer></script>
+    <script src="./scripts/script.js" type="module" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,9 +13,24 @@
 <body>
     <header class="title">
         <h2>Welcome to...</h2>
-        <h1>Hangman</h1>
+        <img src="./assests/img/hangman-title.png" alt="">
     </header>
-    <section class="hangman-img"></section>
-    <section class="keyboard"></section>
+    <section class="start">
+        <form id="usernameForm">
+            <div>
+                <label 
+                    for="username">
+                    Please write your username below
+                </label>
+                <input 
+                    type="text" 
+                    required placeholder="Enter Username"
+                    id="username" 
+                    name="username">
+                </input>
+            </div>
+            <button type="submit" class="start_btn">Start Game</button>
+        </form>
+    </section>
 </body>
 </html>

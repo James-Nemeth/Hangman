@@ -1,0 +1,19 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 230px;
+        height: 130px;
+        background-color: c.$alt-bg-color;
+        border-radius: 5px;
+        margin-left: -10px; 
+    }
+    #welcomeUser{
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+}
