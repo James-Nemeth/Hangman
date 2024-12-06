@@ -1,6 +1,24 @@
+@use "../particals/colors" as c;
+
 @mixin flex ($direction: column, $justify: center, $align: center) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin btn-style() {
+    padding: 8px 40px;
+    border: 1px solid black;
+    background-color: c.$alt-bg-color;
+    color: c.$main-text-color;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+        color: black;
+    }
 }

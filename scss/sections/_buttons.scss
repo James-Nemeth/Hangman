@@ -1,0 +1,13 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.btn-container {
+    width: 65%;
+    margin: auto;
+    @include mixins.flex(row);
+    flex-wrap: wrap;
+    #btn {
+        @include mixins.btn-style;
+        margin: 10px;
+    }
+}
