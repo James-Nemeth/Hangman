@@ -1,0 +1,10 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.img_container {
+    @include mixins.flex();
+    margin: 20px;
+    img {
+        width: 250px;
+    }
+}

@@ -1,0 +1,7 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.word_container {
+    @include mixins.flex();
+    font-size: 2.5rem
+}
