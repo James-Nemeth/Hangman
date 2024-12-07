@@ -109,7 +109,7 @@ form .green_btn:hover {
   margin: 20px;
 }
 .img_container img {
-  width: 300px;
+  width: 303px;
   height: 400px;
 }
 
@@ -142,7 +142,6 @@ form .green_btn:hover {
   background-color: #ccc; /* Gray color for disabled state */
   color: #666; /* Dimmed text color */
   cursor: not-allowed; /* Indicate that the button is not clickable */
-  border: none;
 }
 
 * {
