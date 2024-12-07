@@ -26,20 +26,8 @@ form {
             font-size: 1.2rem;
         }
     }
-    button {
-        padding: 16px 25px;
-        font-size: 1.2rem;
-        background-color: greenyellow;
-        border: 2px solid c.$alt-bg-color;
-        border-radius: 5px;
-        font-weight: 500;
-        cursor: pointer;
-        &:hover {
-            transition: 0.3s ease-in-out;
-            background-color: black;
-            border: 1px solid black;
-            color: rgb(168, 252, 0);
-        }
+    .green_btn {
+        @include mixins.alt-btn-style
     }
     
 }

@@ -6,8 +6,15 @@
     margin: auto;
     @include mixins.flex(row, space-evenly);
     flex-wrap: wrap;
-    #btn {
-        @include mixins.btn-style;
+    .btn {
+        @include mixins.main-btn-style;
         margin: 10px;
     }
+    .disabled-btn {
+        background-color: #ccc; /* Gray color for disabled state */
+        color: #666; /* Dimmed text color */
+        cursor: not-allowed; /* Indicate that the button is not clickable */
+        border: none;
+    }
 }
+
