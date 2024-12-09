@@ -8,7 +8,7 @@ form {
     margin-top: 20px;
     div {
         @include mixins.flex;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         gap: 30px;
         label {
             background-color: c.$alt-bg-color;
@@ -29,5 +29,14 @@ form {
     .green_btn {
         @include mixins.alt-btn-style
     }
-    
+}
+
+@media screen and (max-width: 576px) {
+    form {
+        div {
+            font-size: 1.2rem;
+            text-align: center;
+            width: 90%;
+        }
+    }
 }

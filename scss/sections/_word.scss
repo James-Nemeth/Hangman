@@ -4,6 +4,9 @@
 .word_container {
     @include mixins.flex();
     font-size: 2.5rem;
+    #end-message {
+        text-align: center
+    }
     .green_btn {
         @include mixins.alt-btn-style;
         margin: 20px

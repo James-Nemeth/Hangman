@@ -19,3 +19,12 @@
         
     }
 }
+
+@media screen and (max-width: 576px) {
+    .title {
+        img {
+            width: 400px;
+            height: 200px;
+        }
+    }
+}

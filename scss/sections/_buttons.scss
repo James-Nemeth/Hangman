@@ -2,7 +2,7 @@
 @use "../particals/mixins";
 
 .btn-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     @include mixins.flex(row, space-evenly);
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
     width: 90%;
         .btn {
              font-size: 1.3;
-             padding: 6px 30px;
+             padding: 6px 28px;
         }
         .disabled-btn {
              background-color: #ccc; 
@@ -46,8 +46,12 @@
    .btn-container {
         .btn {
             @include mixins.mobile-btn-style;
-            background-color: yellow;
         }
+        .disabled-btn {
+            background-color: #ccc; 
+            color: #666; 
+            cursor: not-allowed;
+       }
     } 
 }
 

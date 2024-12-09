@@ -14,3 +14,11 @@
         padding: 10px 20px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .header_game {
+        #welcomeUser{
+            text-align: end;
+        }
+    }
+}
