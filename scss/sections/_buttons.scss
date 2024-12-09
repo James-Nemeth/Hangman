@@ -2,7 +2,7 @@
 @use "../particals/mixins";
 
 .btn-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     @include mixins.flex(row, space-evenly);
     flex-wrap: wrap;
@@ -11,9 +11,44 @@
         margin: 10px;
     }
     .disabled-btn {
-        background-color: #ccc; /* Gray color for disabled state */
-        color: #666; /* Dimmed text color */
-        cursor: not-allowed; /* Indicate that the button is not clickable */
+        background-color: #ccc; 
+        color: #666; 
+        cursor: not-allowed;
+    } 
+} 
+
+@media screen and (max-width: 1024px) {
+    .btn-container {
+    width: 90%;
+        .btn {
+             font-size: 1.3;
+             padding: 6px 30px;
+        }
+        .disabled-btn {
+             background-color: #ccc; 
+             color: #666; 
+             cursor: not-allowed;
+        }
+    } 
+ }
+
+@media screen and (max-width: 768px) {
+    .btn-container {
+        width: 100%;
+        .btn {
+            font-size: 1.3;
+            padding: 4px 22px;
+        }
+    } 
+ }
+
+@media screen and (max-width: 576px) {
+   .btn-container {
+        .btn {
+            @include mixins.mobile-btn-style;
+            background-color: yellow;
+        }
     } 
 }
+
 
