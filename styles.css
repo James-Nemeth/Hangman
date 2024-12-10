@@ -219,6 +219,7 @@ form .green_btn:hover {
     font-size: 1.2rem;
     border-radius: 5px;
     font-weight: 500;
+    margin: 6px;
     cursor: pointer;
   }
   .btn-container .btn:hover {
