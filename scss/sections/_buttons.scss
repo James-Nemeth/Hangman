@@ -1,0 +1,58 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.btn-container {
+    width: 90%;
+    margin: auto;
+    @include mixins.flex(row, space-evenly);
+    flex-wrap: wrap;
+    .btn {
+        @include mixins.main-btn-style;
+        margin: 10px;
+    }
+    .disabled-btn {
+        background-color: #ccc; 
+        color: #666; 
+        cursor: not-allowed;
+    } 
+} 
+
+@media screen and (max-width: 1024px) {
+    .btn-container {
+    width: 90%;
+        .btn {
+             font-size: 1.3;
+             padding: 6px 28px;
+        }
+        .disabled-btn {
+             background-color: #ccc; 
+             color: #666; 
+             cursor: not-allowed;
+        }
+    } 
+ }
+
+@media screen and (max-width: 768px) {
+    .btn-container {
+        width: 100%;
+        .btn {
+            font-size: 1.3;
+            padding: 4px 22px;
+        }
+    } 
+ }
+
+@media screen and (max-width: 576px) {
+   .btn-container {
+        .btn {
+            @include mixins.mobile-btn-style;
+        }
+        .disabled-btn {
+            background-color: #ccc; 
+            color: #666; 
+            cursor: not-allowed;
+       }
+    } 
+}
+
+

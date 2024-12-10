@@ -1,0 +1,30 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.title {
+    color: c.$main-text-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    img {
+        width: 500px;
+        height: 250px;
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        img {
+            width: 400px;
+            height: 200px;
+        }
+    }
+}

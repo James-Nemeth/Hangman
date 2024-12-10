@@ -1,0 +1,20 @@
+@use "./scss/sections/header";
+@use "./scss/sections/start-game";
+@use "./scss/sections/game-header";
+@use "./scss/sections/word";
+@use "./scss/sections/image";
+@use "./scss/sections/buttons";
+@use "./scss/particals/colors" as c;
+@use "./scss/particals/typography" as font;
+@use "./scss/particals/mixins";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: font.$main-text-font
+}
+
+body {
+    background-color: c.$main-bg-color;
+}
