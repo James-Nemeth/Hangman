@@ -1,0 +1,57 @@
+@use "../particals/colors" as c;
+
+@mixin flex ($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin main-btn-style {
+    padding: 8px 40px;
+    border: 1px solid black;
+    background-color: c.$alt-bg-color;
+    color: c.$main-text-color;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+        color: black;
+    }
+}
+
+@mixin mobile-btn-style {
+    padding: 3px 20px;
+    border: 1px solid black;
+    background-color: c.$alt-bg-color;
+    color: c.$main-text-color;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 6px;
+    cursor: pointer;
+    &:hover {
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+        color: black;
+    }
+}
+
+@mixin alt-btn-style {
+    padding: 16px 25px;
+        font-size: 1.2rem;
+        background-color: greenyellow;
+        border: 2px solid c.$alt-bg-color;
+        border-radius: 5px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+            transition: 0.3s ease-in-out;
+            background-color: black;
+            border: 1px solid black;
+            color: rgb(168, 252, 0);
+        }
+}

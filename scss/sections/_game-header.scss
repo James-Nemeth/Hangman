@@ -1,0 +1,24 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.header_game {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 250px;
+        height: 130px;
+    }
+    #welcomeUser{
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header_game {
+        #welcomeUser{
+            text-align: end;
+        }
+    }
+}

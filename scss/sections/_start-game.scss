@@ -1,0 +1,42 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+
+form {
+    @include mixins.flex;
+    gap: 100px;
+    margin-top: 20px;
+    div {
+        @include mixins.flex;
+        font-size: 1.4rem;
+        gap: 30px;
+        label {
+            background-color: c.$alt-bg-color;
+            padding: 10px 100px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        input {
+            padding: 5px 50px;
+            text-align: center;
+            background-color: c.$main-bg-color;
+            border: 2px solid c.$alt-bg-color;
+            border-radius: 5px;
+            color: c.$main-text-color;
+            font-size: 1.2rem;
+        }
+    }
+    .green_btn {
+        @include mixins.alt-btn-style
+    }
+}
+
+@media screen and (max-width: 576px) {
+    form {
+        div {
+            font-size: 1.2rem;
+            text-align: center;
+            width: 90%;
+        }
+    }
+}

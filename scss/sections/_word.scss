@@ -1,0 +1,25 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.word_container {
+    @include mixins.flex();
+    font-size: 2.5rem;
+    #end-message {
+        text-align: center
+    }
+    .green_btn {
+        @include mixins.alt-btn-style;
+        margin: 20px
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .word_container {
+        h1 {
+            font-size: 1.5rem;
+            margin: 5px;
+            text-align: center;
+        }
+    } 
+}

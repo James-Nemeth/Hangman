@@ -1,0 +1,30 @@
+@use "../particals/colors" as c;
+@use "../particals/mixins";
+
+.img_container {
+    @include mixins.flex();
+    margin: 20px;
+    img {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img_container {
+        margin: 10px;   
+        img {
+            width: 250px;
+        height: 350px;
+        } 
+    } 
+}
+
+@media screen and (max-width: 576px) {
+    .img_container {
+        img {
+            width: 200px;
+            height: 280px;
+        } 
+    } 
+}
